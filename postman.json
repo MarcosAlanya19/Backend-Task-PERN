@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "121f3e48-faad-445c-97b7-021afb0eba25",
+		"name": "Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22863494"
+	},
+	"item": [
+		{
+			"name": "/tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"dddsssfa\",\r\n    \"description\": \"Recuerda esforzarte\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API}}/tasks",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API}}/tasks/765feff2-c4c9-4b24-89a7-309bc23821a3",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"tasks",
+						"765feff2-c4c9-4b24-89a7-309bc23821a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{API}}/tasks/4c584644-058a-442d-98eb-5189d96f3571",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"tasks",
+						"4c584644-058a-442d-98eb-5189d96f3571"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tasks/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Este es un cambio\",\r\n    \"description\": \"Este es el segundo cambio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API}}/tasks/7e61c749-6dc9-4a97-b6c2-ebb5345948d1",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"tasks",
+						"7e61c749-6dc9-4a97-b6c2-ebb5345948d1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "API",
+			"value": "localhost:3000/api"
+		}
+	]
+}

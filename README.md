@@ -2,10 +2,10 @@
 Esta es una aplicación de gestión de tareas que permite realizar operaciones CRUD (crear, leer, actualizar y eliminar) en una base de datos de tareas.
 
 # Dependencias
-- Node.js - para la parte del servidor
-- Express - para crear el servidor web
-- PostgreSQL - para almacenar los datos de las tareas
-- Cors - para permitir las solicitudes de origen cruzado (CORS)
+- **`Node`** - para la parte del servidor
+- **`Express`** - para crear el servidor web
+- **`PostgreSQL`** - para almacenar los datos de las tareas
+- **`Cors`** - para permitir las solicitudes de origen cruzado (CORS)
 
 # Archivo index.ts
 - **`cors`** y **`express`** son importados como dependencias necesarias para el servidor.
